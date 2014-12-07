@@ -66,7 +66,7 @@ var YoutubeComments = (function() {
 			}
 			var text = start + ' ';
 			totalLength += text.length;
-			if(/[\.\$!\?]$/.test(nextKey) || totalLength >= targetLength)
+			if(totalLength >= targetLength)
 				return text + nextKey;
 			return text + generatePortion(nextKey);
 		}
