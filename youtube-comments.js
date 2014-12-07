@@ -61,8 +61,12 @@ var YoutubeComments = (function() {
 			else
 			{
 				var nextKey = null;
+				var timesThrough = 0;
 				while(!nextKey)
+				{
 					nextKey = selectKey(key);
+					if(timesThrough++ > 100) nextKey = shuffle(keys)[0];
+				}
 			}
 			var text = start + ' ';
 			totalLength += text.length;

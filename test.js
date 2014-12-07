@@ -4,7 +4,4 @@ var youtube = require('./youtube-comments.js'),
 
 youtube.load(JSON.parse(fs.readFileSync('database.json')));
 
-console.log(youtube.generate('news', 200, {
-	stripSpecial: true,
-	alwaysRandom: true
-}));
+console.log(youtube.generate('gaming', 200));
