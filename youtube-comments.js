@@ -57,7 +57,7 @@ var YoutubeComments = (function() {
 				});
 			}
 			if(alwaysRandom)
-				nextKey = shuffle(Object.keys(key))[0];
+				nextKey = shuffle(keys)[0];
 			else
 			{
 				var nextKey = null;
